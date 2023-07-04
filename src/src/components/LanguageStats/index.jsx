@@ -135,6 +135,9 @@ const LanguageStats = () => {
                     </div>
                 ) : (
                     sortedLanguages ? (
+                        <>
+                        <br />
+                        <br />
                         <Chart
                             chartType="PieChart"
                             data={sortedLanguages}
@@ -142,6 +145,7 @@ const LanguageStats = () => {
                             height="400px"
                             options={options}
                         />
+                        </>
                     ) : (
                         <p className='blue-text'>Not enough data</p>
                     )
