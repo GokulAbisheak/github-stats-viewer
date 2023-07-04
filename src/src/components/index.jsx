@@ -8,7 +8,7 @@ const Components = () => {
         <>
             <Header />
             <div className='grid-container-1'>
-                <div className='grid-item'>
+                <div className='grid-item-full'>
                     <Profile />
                 </div>
             </div>

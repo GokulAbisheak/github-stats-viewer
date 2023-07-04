@@ -8,10 +8,10 @@ body {
 
 .box {
     padding: 50px 50px 0px 50px;
-    outline: 2px solid #1d4ed8;
+    /* outline: 2px solid #1d4ed8; */
     border-radius: 10px;
-    color: #1d4ed8;
-    background-color: rgba(11, 31, 85, 0.2);
+    /* color: #1d4ed8; */
+    /* background-color: rgba(11, 31, 85, 0.2); */
     text-align: center;
     margin: 0px;
     max-width: 400px;
@@ -80,6 +80,14 @@ body {
     padding: 16px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    width: fit-content;
+  }
+
+  .grid-item-full {
+    text-align: center;
+    padding: 16px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
   }
 
   .nav-link {
@@ -131,4 +139,32 @@ body {
 
   .text-grey {
     color: #444444;
+  }
+
+  .search-bar {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    border: 2px solid #1d4ed8;
+  }
+
+  .search-bar input[type=text] {
+    padding: 12px;
+    border-radius: 10px 0px 0px 10px;
+    border: 0px;
+    background-color: #f2f2f2;
+    outline: none;
+  }
+
+  .search-bar input[type=submit] {
+    padding: 12px;
+    border-radius: 0px 7px 7px 0px;
+    border: 0px;
+    background-color: #1d4ed8;
+    color: #ffffff;
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
   }
