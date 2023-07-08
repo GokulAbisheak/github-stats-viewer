@@ -9,7 +9,7 @@ const Header = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        window.location.href = `/?username=${searchUser}`;
+        window.location.href = `/user/?username=${searchUser}`;
     }
 
     return (
