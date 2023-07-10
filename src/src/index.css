@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  margin: 0px;
+}
+
+.shadow-md {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

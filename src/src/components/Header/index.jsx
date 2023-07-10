@@ -1,34 +1,44 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch, faUsers } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [searchUser, setSearchUser] = useState("");
 
-    const [searchUser, setSearchUser] = useState('');
+  const handleSubmit = (e) => {
+    e.preventDefault();
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+    window.location.href = `/user/?username=${searchUser}`;
+  };
 
-        window.location.href = `/user/?username=${searchUser}`;
-    }
-
-    return (
-        <>
-            <div className='flex-between h-64px padding-x-md shadow-md header'>
-                <div className='flex-between text-18 blue-text bold'>
-                    GitHub Stats Viewer
-                </div>
-                <div className='flex-between'>
-                    <form onSubmit={handleSubmit}>
-                        <div className='search-bar'>
-                            <input placeholder='Enter Username' type="text" value={searchUser} onChange={(e) => setSearchUser(e.target.value)} />
-                            <input type="submit" value="🔎︎" />
-                        </div>
-                    </form>
-                </div>
+  return (
+    <>
+      <div className="flex justify-between items-center w-full h-16 px-4 shadow-md sticky top-0 bg-white shadow">
+        <Link to="/">
+          <div className="justify-between text-xl text-blue-700 font-bold">
+            GitHub Stats Viewer
+          </div>
+        </Link>
+        <div className="justify-between">
+          <form onSubmit={handleSubmit}>
+            <div className="border-2 border-blue-700 rounded py-2 px-4">
+              <input
+                placeholder="Enter Username"
+                type="text"
+                value={searchUser}
+                onChange={(e) => setSearchUser(e.target.value)}
+                className="outline-0"
+              />
+              <button className="text-blue-700" type="submit">
+                <FontAwesomeIcon icon={faSearch} />
+              </button>
             </div>
-        </>
-    );
-}
+          </form>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Header;
