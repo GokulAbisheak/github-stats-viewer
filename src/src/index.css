@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   width: 100%;
@@ -12,4 +16,8 @@ body {
 
 .shadow-md {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.min-w-400 {
+  min-width: 400px;
 }
