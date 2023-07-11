@@ -33,11 +33,11 @@ const Profile = () => {
     return (
         <>
             <div className='flex'>
-                <div className='flex text-left items-center'>
+                <div className='flex flex-col lg:flex-row text-center lg:text-left items-center'>
                     {userData ? (
                         userData.login ? (
                             <>
-                                <div className='w-48 h-48 rounded-full mr-12 overflow-hidden'>
+                                <div className='w-48 h-48 rounded-full mr-0 lg:mr-12 mb-4 lg:mb-0 overflow-hidden'>
                                     <img src={userData.avatar_url} />
                                 </div>
                                 <div className=''>
