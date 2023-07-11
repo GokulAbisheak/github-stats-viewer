@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full h-16 px-4 shadow-md sticky top-0 bg-white shadow">
+      <div className="flex justify-between items-center w-full h-16 px-4 shadow-md sticky top-0 bg-white shadow z-50">
         <Link to="/">
           <div className="justify-between text-xl text-blue-700 font-bold">
             GitHub Stats Viewer
