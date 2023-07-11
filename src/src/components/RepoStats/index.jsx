@@ -75,7 +75,7 @@ const RepoStats = () => {
     return (
         <>
             <div className='rounded text-center ma-width-96 pt-12'>
-                <h3 className='mb-6 text-xl font-normal'>Repository Stats</h3>
+                <h3 className='mb-6 text-xl font-normal'>Overall Repository Stats</h3>
                 {starCount ? (
                     barData ? (
                         <>
