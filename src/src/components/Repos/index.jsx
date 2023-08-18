@@ -37,6 +37,7 @@ const Repos = () => {
 
         if (json.length === 0) {
           setMax(true);
+          setPageNo(pageNo-1)
         } else {
           setMax(false);
         }
