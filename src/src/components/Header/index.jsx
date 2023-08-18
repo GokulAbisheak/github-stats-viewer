@@ -16,7 +16,7 @@ const Header = () => {
     <>
       <div className="flex justify-between items-center w-full h-16 px-4 shadow-md fixed top-0 bg-white shadow z-50">
         <Link to="/">
-          <div className="justify-between text-xl text-blue-700 font-bold">
+          <div className="justify-between text-md md:text-xl text-blue-700 font-bold">
             GitHub Stats Viewer
           </div>
         </Link>
@@ -28,7 +28,7 @@ const Header = () => {
                 type="text"
                 value={searchUser}
                 onChange={(e) => setSearchUser(e.target.value)}
-                className="outline-0"
+                className="outline-0 max-w-[100px] md:max-w-[150px] text-xs md:text-md"
               />
               <button className="text-blue-700" type="submit">
                 <FontAwesomeIcon icon={faSearch} />
