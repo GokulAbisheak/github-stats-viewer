@@ -9,7 +9,7 @@ const Components = () => {
   return (
     <>
       <Header />
-      <div className="flex justify-center items-stretch">
+      <div className="flex justify-center items-stretch mt-[64px]">
         <div className="flex text-center py-12 shadow-md rounded w-full justify-center m-4">
           <Profile />
         </div>
