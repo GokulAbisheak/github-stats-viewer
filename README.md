@@ -5,13 +5,13 @@ GitHub Stats Viewer uses GitHub API to retrive user data and display stats accor
 
 <br />
 
-https://github-stats-viewer.vercel.app/user/?username= `<USERNAME>` <br />
-Replace `<USERNAME>` with actual GitHub Username
+https://github-stats-viewer.vercel.app/user/?username=USERNAME <br />
+Replace `USERNAME` with actual GitHub Username
 
 <br />
 
-https://github-stats-viewer.vercel.app/repos/?repo= `<FULL-REPO-NAME>` <br />
-Replace `<FULL-REPO-NAME>` with actual full GitHub Repo Name
+https://github-stats-viewer.vercel.app/repos/?repo=FULL-REPO-NAME <br />
+Replace `FULL-REPO-NAME` with actual full GitHub Repo Name
 
 <br />
 
